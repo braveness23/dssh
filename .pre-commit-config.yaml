@@ -1,0 +1,10 @@
+# Pre-commit Configuration
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      -   id: gofmt
+          args: ["-w"]
+      -   id: go-vet
+      -   id: golangci-lint
+          args: ["run"]
